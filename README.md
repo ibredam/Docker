@@ -1,22 +1,6 @@
 # Flask-MySQL-Docker
 
 A simple Flask web application that connects to a MySQL database, containerized with Docker and Docker Compose. Demonstrates how to use Docker secrets, environment variables, 
-flask-crud-app structure /
-├── app.py              # Main Flask application file
-├── database_config.py  # Database connection settings
-├── gunicorn.conf.py     # Gunicorn configuration
-├── requirements.txt    # Python dependencies
-├── .dockerignore        # Files to exclude from Docker image
-├── Dockerfile          # Docker image definition
-├── docker-compose.yml  # Docker Compose configuration
-├── init.sql            # MySQL database initialization script
-├── secrets/            # Directory for sensitive data
-│   └── secrets.env      # Environment variables for Docker
-├── templates/          # HTML templates
-│   └── index.html        # Main page
-└── static/             # Static files (CSS, JavaScript, images)
-    └── styles.css        # CSS file (optional)
-
 
 ## Technologies Used
 
@@ -38,7 +22,23 @@ flask-crud-app structure /
 - [License](#license)
 - [Acknowledgments](#acknowledgments)
 
-  
+## project structure 
+
+  flask-crud-app structure /
+├── app.py              # Main Flask application file
+├── database_config.py  # Database connection settings
+├── gunicorn.conf.py     # Gunicorn configuration
+├── requirements.txt    # Python dependencies
+├── .dockerignore        # Files to exclude from Docker image
+├── Dockerfile          # Docker image definition
+├── docker-compose.yml  # Docker Compose configuration
+├── init.sql            # MySQL database initialization script
+├── secrets/            # Directory for sensitive data
+│   └── secrets.env      # Environment variables for Docker
+├── templates/          # HTML templates
+│   └── index.html        # Main page
+└── static/             # Static files (CSS, JavaScript, images)
+    └── styles.css        # CSS file (optional)
 
 ## Description
 
