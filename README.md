@@ -1,7 +1,6 @@
 # Flask-MySQL-Docker
 
-A simple Flask web application that connects to a MySQL database, containerized with Docker and Docker Compose. Demonstrates how to use Docker secrets, environment variables, and a `my.cnf` file for database configuration.
-
+A simple Flask web application that connects to a MySQL database, containerized with Docker and Docker Compose. Demonstrates how to use Docker secrets, environment variables, 
 ## Table of Contents
 
 - [Description](#description)
@@ -65,7 +64,7 @@ This project showcases how to build a Flask web application with a MySQL databas
 ## Database
 
 * **`init.sql`:** Initializes the MySQL database with the `users` table and sample data.
-* **`my.cnf`:** Customizes the MySQL server configuration, allowing you to optimize performance or change default settings.
+
 
 ## Troubleshooting
 
