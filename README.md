@@ -1,6 +1,13 @@
 # Flask-MySQL-Docker
 
 A simple Flask web application that connects to a MySQL database, containerized with Docker and Docker Compose. Demonstrates how to use Docker secrets, environment variables, 
+## Technologies Used
+
+*   Python
+*   Flask
+*   MySQL
+*   Docker
+*   Gunicorn
 ## Table of Contents
 
 - [Description](#description)
