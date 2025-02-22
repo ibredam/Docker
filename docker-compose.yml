@@ -1,8 +1,9 @@
 # docker-compose.yml
-
+version: "3.8"
 services:
   db:
     image: mysql:8.0
+    container_name: mysql_db
     environment:
       MYSQL_ROOT_PASSWORD: root_password
       MYSQL_DATABASE: py_db
@@ -11,6 +12,8 @@ services:
     volumes:
       - db_volume:/var/lib/mysql
       - ./init.sql:/docker-entrypoint-initdb.d/init.sql
+    networks:
+      - backend
     ports:
       - "3306:3306"
     env_file:
@@ -18,10 +21,14 @@ services:
 
   web:
     build: .
+    container_name: web 
     ports:
       - "5000:5000"
     volumes:
       - web_volume:/app
+    networks:
+      - frontend 
+      - backend
     depends_on:
       - db
     env_file:
@@ -30,3 +37,7 @@ services:
 volumes:
   db_volume:
   web_volume:
+networks:
+  frontend:
+  backend: 
+    internal: true  
