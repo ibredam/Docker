@@ -1,0 +1,20 @@
+# Ignore Python virtual environments
+venv/
+*.pyc
+
+# Ignore Docker-related files
+Dockerfile
+.dockerignore
+
+# Ignore sensitive information
+secrets/
+*.env
+
+# Ignore git related files.
+.git/
+
+# Ignore node modules.
+node_modules/
+
+# Ignore log files.
+*.log

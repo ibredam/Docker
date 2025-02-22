@@ -1,0 +1,35 @@
+
+services:
+  db:
+    image: mysql:8.0
+    container_name: sql_db
+    networks:
+      backend:
+    volumes:
+      - ./init.sql:/docker-entrypoint-initdb.d/init.sql
+      - db_data:/var/lib/mysql
+    environment:
+      MYSQL_ROOT_PASSWORD: password
+      MYSQL_DATABASE: mydatabase
+    ports:
+      - "3306:3306" # Optional if you want to access the db from your host.
+  web:
+    build: .
+    container_name: web
+    ports:
+      - "5000:5000"
+    depends_on:
+      - db
+    env_file:
+      - secrets.env
+    environment:
+      MYSQL_HOST: db
+    networks:
+      - frontend
+      - backend
+networks:
+  frontend:
+  backend:
+    internal: true 
+volumes:
+  db_data:
