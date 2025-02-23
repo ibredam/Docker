@@ -1,22 +1,11 @@
 # Flask-MySQL Docker Project
 
 This project demonstrates a simple Flask web application that connects to a MySQL database using Docker Compose.
+My Project
 
-## Project Structure
+This is my project. You can find it on GitHub at:
 
-flask-mysql-docker/
-├── app.py           # Flask application code
-├── requirements.txt # Python dependencies
-├── Dockerfile       # Dockerfile for the Flask app
-├── docker-compose.yml # Docker Compose configuration
-├── init.sql         # SQL script to initialize the database
-├── secrets.env      # Environment variables (database credentials, etc.)
-├── gunicorn.py      # Gunicorn configuration
-└── templates/       # HTML templates
-└── index.html
-└── static/          # Static files (CSS, images)
-└── style.css
-
+[https://github.com/ibredam/Docker]
 
 ## Prerequisites
 
