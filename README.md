@@ -17,7 +17,8 @@ This is my project. You can find it on GitHub at:
 1.  **Clone the Repository (if you haven't already):**
 
     ```bash
-    git clone <your-github-repository-url>
+    git clone https://github.com/ibredam/Docker
+
     cd flask-mysql-docker
     ```
 
